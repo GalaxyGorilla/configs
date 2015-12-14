@@ -1,0 +1,10 @@
+{
+	"name": "Default",
+	"groups": {
+		"background":                { "fg": "black", "bg": "black", "attrs": [] },
+		"session":                   { "fg": "gray8", "bg": "black", "attrs": [] },
+		"hostname":                  { "fg": "gray8", "bg": "black", "attrs": [] },
+		"internal_ip":               { "fg": "gray8", "bg": "black", "attrs": [] },
+		"network_load":              { "fg": "gray8", "bg": "black", "attrs": [] }
+	}
+}

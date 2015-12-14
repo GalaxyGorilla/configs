@@ -1,0 +1,17 @@
+{
+	"groups": {
+		"active_window_status": {"fg": "darkblue",   "bg": "black",    "attrs": ["bold"]},
+		"window_status":	    {"fg": "darkblue",   "bg": "black",    "attrs": ["bold"]},
+		"window":               {"fg": "gray8",      "bg": "black",    "attrs": ["bold"]},
+		"window:current":       {"fg": "black",      "bg": "darkblue", "attrs": ["bold"]},
+		"window:divider":       {"fg": "black",      "bg": "black",    "attrs": ["bold"]},
+		"window_name":          {"fg": "white",      "bg": "darkblue", "attrs": ["bold"]},
+		"session":              {"fg": "black",      "bg": "gray70",   "attrs": ["bold"]},
+		"network_load":  	    {"fg": "gray8",      "bg": "black",    "attrs": []},
+		"ip":       		    {"fg": "gray8",      "bg": "black",    "attrs": []},
+		"hostname":       	    {"fg": "gray8",      "bg": "black",    "attrs": ["bold"]},
+		"date":       		    {"fg": "gray8",      "bg": "black",    "attrs": []},
+		"time":       		    {"fg": "gray8",      "bg": "black",    "attrs": []},
+		"time:divider":         {"fg": "gray8",      "bg": "black",    "attrs": []}
+	}
+}

@@ -1,0 +1,76 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" A minimalistic vimrc which fixes the obvious casualities.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Fix compatibility issues
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible                " use vim defaults
+set backspace=2	                " make backspace like most other apps
+set ls=2                        " allways show status line
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Tabs and indention
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set tabstop=4                   " numbers of spaces of tab character
+set shiftwidth=4                " numbers of spaces to (auto)indent
+set autoindent    	            " set autoindenting on
+set smartindent                 " smarter indent
+set cindent                     " indenting for c-like code
+set expandtab                   " tabs are converted to spaces
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Searching
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set hlsearch                    " highlight searches
+set ignorecase                  " ignore case when searching
+set incsearch                   " do incremental searching
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Status bar
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set showcmd                     " display incomplete commands
+set ruler                       " show the cursor position all the time
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Scrolling and line breaking
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set scrolloff=5                 " keep n lines when scrolling
+set nostartofline               " don't jump to first character when paging
+set whichwrap=<,>,[,]           " move freely between lines
+set nowrap                      " don't wrap lines
+" Restore cursor position
+au BufReadPost * if line("'\"") > 0|if line("'\"") 
+    \ <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Visual appearance
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax on           			" use syntax highlighing
+colorscheme elflord  			" use this colorscheme
+set number                      " show line numbers
+set sm                          " show matching braces
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Package manager
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+execute pathogen#infect()
+filetype plugin indent on
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Nerdtree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" keymapping for toggling
+nnoremap <F4> :NERDTreeToggle<CR> 
+" close when no buffer left
+let NERDTreeQuitOnOpen=1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Miscellaneous
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set visualbell t_vb=            " turn off error beep/flash
+set novisualbell                " turn off visual bell
+set ttyfast                     " smoother changes
+set shortmess=atI               " Abbreviate messages
+set mouse=a                     " enable mouse support
+set wildmenu                    " better tab completion
