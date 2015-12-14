@@ -1,5 +1,6 @@
 My config data for some tools I use in my daily work. I basically 
-use zsh with oh-my-zsh, tmux with powerline and vim with pathogen.
+use zsh with oh-my-zsh, tmux with powerline and vim with nerdtree.
 
 The powerline part can be easily installed via 'yum' or 'dnf'
-using Fedora, e.g. 'powerline' and 'tmux-powerline'.
+using Fedora, e.g. 'powerline' and 'tmux-powerline'. Nerdtree
+is installed with pathogen.
