@@ -66,7 +66,7 @@ source $ZSH/oh-my-zsh.sh
 #git aliases, the easy way
 alias gic='git commit -a'
 alias gis='git status'
-alias gil='git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate'
+alias gil='git log --pretty=format:"%C(yellow)%h%d %Creset%s%Cblue [%cn]" --decorate'
 alias gica='git commit --amend -a'
 alias gich='git checkout'
 alias gip='git push'
