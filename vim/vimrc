@@ -8,6 +8,7 @@
 set nocompatible                " use vim defaults
 set backspace=2	                " make backspace like most other apps
 set ls=2                        " allways show status line
+set clipboard^=unnamed,unnamedplus " we always use system clipboard
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Tabs and indention

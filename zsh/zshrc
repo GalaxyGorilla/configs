@@ -71,5 +71,7 @@ alias gil='git log --pretty=format:"%C(yellow)%h%d %Creset%s%Cblue [%cn]" --deco
 alias gica='git commit --amend -a'
 alias gich='git checkout'
 alias gip='git push'
+alias gif='git diff'
 
 # other aliases
+alias vim='gvim -v' # vim always executed as gvim in terminal mode for clipboard support

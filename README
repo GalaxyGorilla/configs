@@ -2,5 +2,10 @@ My config data for some tools I use in my daily work. I basically
 use zsh with oh-my-zsh, tmux with powerline and vim with nerdtree.
 
 The powerline part can be easily installed via 'yum' or 'dnf'
-using Fedora, e.g. 'powerline' and 'tmux-powerline'. Nerdtree
-is installed with pathogen.
+using Fedora, e.g. 'powerline' and 'tmux-powerline'. Same goes 
+for Nerdtree.
+
+To fix some clipboard issues vim-x11 and xclip should be installed.
+Then gvim will be automatically executed in terminal mode. The
+reason is that vim is usally shipped without clipboard support, at
+least in Fedora (see 'vim --version' for compile flags).
