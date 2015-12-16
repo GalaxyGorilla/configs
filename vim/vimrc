@@ -51,6 +51,15 @@ syntax on           			" use syntax highlighing
 colorscheme elflord  			" use this colorscheme
 set number                      " show line numbers
 set sm                          " show matching braces
+hi User1 ctermbg=gray ctermfg=black cterm=bold 
+set statusline=
+set statusline+=%1*\[%n]                " buffernr
+set statusline+=%1*\ %<%F\              " File+path
+set statusline+=%1*\ %y\                " FileType
+set statusline+=%1*\ %m%r%w             " Modified?
+set statusline+=%1*\ %=\ row:%l/%L\     " Rownumber/total (%)
+set statusline+=%1*\ col:%03c\          " Colnr
+set statusline+=%1*\ \ %P\ \            " Top/bot.
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Package manager
