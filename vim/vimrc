@@ -60,6 +60,9 @@ set statusline+=%1*\ %m%r%w             " Modified?
 set statusline+=%1*\ %=\ row:%l/%L\     " Rownumber/total (%)
 set statusline+=%1*\ col:%03c\          " Colnr
 set statusline+=%1*\ \ %P\ \            " Top/bot.
+:hi TabLineFill ctermfg=black ctermbg=black
+:hi TabLine ctermfg=black ctermbg=gray cterm=bold
+:hi TabLineSel ctermfg=Black ctermbg=yellow cterm=bold
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Package manager
