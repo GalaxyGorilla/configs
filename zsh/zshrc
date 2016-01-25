@@ -76,6 +76,7 @@ alias gica='git commit --amend -a'
 alias gich='git checkout'
 alias gip='git push'
 alias gif='git diff'
+alias gir='git remote -v'
 
 # other aliases
 alias vim='gvim -v' # vim always executed as gvim in terminal mode for clipboard support
