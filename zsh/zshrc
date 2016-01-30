@@ -5,7 +5,7 @@ export ZSH=/home/$USER/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="clean"
+ZSH_THEME="gorilla"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -67,6 +67,13 @@ fi
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/$USER/.local/bin:/home/$USER/bin"
 source $ZSH/oh-my-zsh.sh
 unset SSH_ASKPASS   # prevent that shitty gui pops up
+
+# print newline before each prompt
+precmd() { print "" }
+
+# auto completion enhancements
+zstyle ':completion:*' special-dirs true
+
 
 #git aliases, the easy way
 alias gic='git commit -a'
