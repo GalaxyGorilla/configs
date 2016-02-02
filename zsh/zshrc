@@ -64,7 +64,7 @@ if [[ -n $SSH_CONNECTION ]]; then
 fi
 
 # User configuration
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/$USER/.local/bin:/home/$USER/bin"
+export PATH="$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/$USER/.local/bin:/home/$USER/bin"
 source $ZSH/oh-my-zsh.sh
 unset SSH_ASKPASS   # prevent that shitty gui pops up
 
