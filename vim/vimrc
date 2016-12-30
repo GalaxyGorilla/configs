@@ -73,10 +73,13 @@ filetype plugin indent on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Nerdtree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" keymapping for toggling
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 nnoremap <F4> :NERDTreeToggle<CR> 
-" close when no buffer left
-let NERDTreeQuitOnOpen=1
+let NERDTreeQuitOnOpen=0
+let g:nerdtree_tabs_open_on_console_startup=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Miscellaneous
